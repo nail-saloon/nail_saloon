@@ -1,1 +1,1 @@
-// export { ReactComponent as DPIconBold } from 'icons/svgs/bold.svg';
+export { ReactComponent as DPIconCancelBtn } from './svgs/cancel.svg';
