@@ -1,6 +1,5 @@
 import React from 'react'
-// import {BrowerRouter as Router, Routes, Route} from "react-router-dom"
-import Footer from '../molecules/Footer'
+import Footer from '../molecules/Footer/Footer'
 import Navbar from '../molecules/Navbar/Index'
 
 const BodyLayout = ({children}) => {

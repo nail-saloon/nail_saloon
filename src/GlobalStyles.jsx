@@ -3,7 +3,6 @@ import { COLORS } from './constants/colors';
 
 
 const GlobalStyle = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
     *, *::before, *::after {
@@ -11,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: 'Inter', sans-serif;
-        background: ${COLORS.Verve};
+        
 
     }
 
@@ -21,6 +20,7 @@ const GlobalStyle = createGlobalStyle`
 
     body {
         color: inherit;
+        background: ${COLORS.Verve};
   
     }
     ::-webkit-scrollbar-thumb {
