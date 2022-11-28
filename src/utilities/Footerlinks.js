@@ -1,4 +1,4 @@
-const Footerlinks = [
+export const Footerlinks = [
         {
             id: 1,
             menu: [
@@ -73,4 +73,3 @@ const Footerlinks = [
        
       ];
     
-export default Footerlinks

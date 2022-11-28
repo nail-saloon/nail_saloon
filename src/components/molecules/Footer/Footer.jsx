@@ -6,7 +6,7 @@ import {
   FooterStyle, FooterRow, Bold, FooterColumn, SocialIcons, FooterInput, SignupBtn, LinkWrapper, Links, FooterLink
 } from './FooterStyle';
 
-import Footerlinks from './Footerlinks';
+import {Footerlinks} from '../../../utilities/Footerlinks';
 
 
 
