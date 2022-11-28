@@ -1,13 +1,11 @@
-import BookAppointment from './components/molecules/appointment';
-import Modal from './components/molecules/modal';
+// import BookAppointment from './components/molecules/appointment';
+import Carousel from './components/molecules/carousel';
+// import Modal from './components/molecules/modal';
 
 function App() {
   return (
     <div>
-      Hello World
-      <Modal show={true}>
-        <BookAppointment />
-      </Modal>
+      <Carousel />
     </div>
   );
 }

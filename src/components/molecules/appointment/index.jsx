@@ -1,11 +1,23 @@
 import React from 'react';
+import { DPIconCancelBtn } from '../../../icons';
 import Input from '../../atoms/Input';
-import { Header, InputContainer, Label, TextEditor, Wrapper } from './styles';
+import {
+  Footer,
+  Header,
+  InputContainer,
+  Label,
+  SelectDrop,
+  TextEditor,
+  Wrapper,
+} from './styles';
 
 const BookAppointment = () => {
   return (
     <Wrapper>
-      <Header>Book Appointment</Header>
+      <Header>
+        Book Appointment
+        <DPIconCancelBtn className="btn-cancel" />
+      </Header>
       <InputContainer>
         <Label>Full Name</Label>
         <Input placeholder="Enter Full Name" />
@@ -23,15 +35,27 @@ const BookAppointment = () => {
           <Label>Do you have any allerges ?</Label>
           <div className="check-wrapper__container">
             <label>Yes</label>
-            <div></div>
+            <Input type="radio" className="check" />
           </div>
           <div className="check-wrapper__container">
             <label>No</label>
-            <div></div>
+            <Input type="radio" className="check" />
           </div>
         </div>
         <TextEditor placeholder="Type a Message " />
       </InputContainer>
+
+      <InputContainer>
+        <Label>Prefered Date and Time ?</Label>
+        <Input type="datetime-local" />
+      </InputContainer>
+
+      <SelectDrop name="nails" id="nails">
+        <option value="Nails">Nails</option>
+        <option value="medicure">Medicure</option>
+        <option value="Predicure">Predicure</option>
+      </SelectDrop>
+      <Footer>Go to homepage</Footer>
     </Wrapper>
   );
 };

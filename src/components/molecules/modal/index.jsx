@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { COLORS } from '../../../constants/colors';
-import { DPIconCancelBtn } from '../../../icons';
+// import { DPIconCancelBtn } from '../../../icons';
 
 const Modal = ({ children, show, hide }) => {
   if (!show) {
@@ -9,9 +9,9 @@ const Modal = ({ children, show, hide }) => {
   }
   return (
     <ModalWrapper onClick={hide}>
-      <span className="cancel-btn" onClick={hide}>
+      {/* <span className="cancel-btn" onClick={hide}>
         <DPIconCancelBtn />
-      </span>
+      </span> */}
       <ModalContent>{children}</ModalContent>
     </ModalWrapper>
   );
@@ -38,4 +38,8 @@ const ModalWrapper = styled.div`
   }
 `;
 
-const ModalContent = styled.div``;
+const ModalContent = styled.div`
+  min-width: 65rem;
+  height: 90vh;
+  overflow: auto;
+`;
