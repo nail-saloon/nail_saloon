@@ -1,9 +1,7 @@
-import React from 'react'
-
+import React from 'react';
+import Structure from '../components/layouts/Structure';
 const Services = () => {
-  return (
-    <div>Services</div>
-  )
-}
+  return <Structure>Services</Structure>;
+};
 
-export default Services
+export default Services;

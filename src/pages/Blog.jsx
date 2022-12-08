@@ -1,9 +1,8 @@
-import React from 'react'
+import React from 'react';
+import Structure from '../components/layouts/Structure';
 
 const Blog = () => {
-  return (
-    <div>Blog</div>
-  )
-}
+  return <Structure>Blog</Structure>;
+};
 
-export default Blog
+export default Blog;
