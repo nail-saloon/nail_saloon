@@ -2,7 +2,9 @@ import React from 'react'
 import { DPIconLogo } from '../../../icons'
 import {
 Nav, NavLink, NavMenu
-} from './Style'
+} from './Style';
+import {LinkData} from '../../../utilities/Links';
+
 
 
 const Navbar = () => {
@@ -14,17 +16,9 @@ const Navbar = () => {
         </div>
         <NavMenu>
           
-            <NavLink to= './' >Home</NavLink>
-          
-            <NavLink to= './About' >About</NavLink>
-          
-            <NavLink to= './Gallery' >Gallery</NavLink>
-          
-            <NavLink to= './Services' >Services</NavLink>
-          
-            <NavLink to= './Blog' >Blog</NavLink>
-          
-            <NavLink to= './Contact' >Contact Us</NavLink>
+           
+        {LinkData.map((linkGroup) => linkGroup.Navbar?.map((link, index) => ( <NavLink key={index} to= {link.to} >{link.name}</NavLink>)))} 
+         
         </NavMenu>
       </Nav>
   
