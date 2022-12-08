@@ -1,12 +1,13 @@
-import React from 'react'
-import Structure from '../components/layouts/Structure'
+import React from 'react';
+import Structure from '../components/layouts/Structure';
+import Carousel from '../components/molecules/carousel';
 
 const Home = () => {
   return (
     <Structure>
-      Home
+      <Carousel />
     </Structure>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

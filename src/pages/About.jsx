@@ -1,9 +1,8 @@
-import React from 'react'
+import React from 'react';
+import Structure from '../components/layouts/Structure';
 
 const About = () => {
-  return (
-    <div>About</div>
-  )
-}
+  return <Structure>About</Structure>;
+};
 
-export default About
+export default About;

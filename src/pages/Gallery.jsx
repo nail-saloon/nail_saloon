@@ -1,9 +1,8 @@
-import React from 'react'
+import React from 'react';
+import Structure from '../components/layouts/Structure';
 
 const Gallery = () => {
-  return (
-    <div>Gallery</div>
-  )
-}
+  return <Structure>Gallery</Structure>;
+};
 
-export default Gallery
+export default Gallery;

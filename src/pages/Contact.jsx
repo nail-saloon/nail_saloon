@@ -1,9 +1,8 @@
-import React from 'react'
+import React from 'react';
+import Structure from '../components/layouts/Structure';
 
 const Contact = () => {
-  return (
-    <div>Contact</div>
-  )
-}
+  return <Structure>Contact</Structure>;
+};
 
-export default Contact
+export default Contact;
