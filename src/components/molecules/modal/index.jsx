@@ -9,9 +9,6 @@ const Modal = ({ children, show, hide }) => {
   }
   return (
     <ModalWrapper onClick={hide}>
-      {/* <span className="cancel-btn" onClick={hide}>
-        <DPIconCancelBtn />
-      </span> */}
       <ModalContent>{children}</ModalContent>
     </ModalWrapper>
   );
