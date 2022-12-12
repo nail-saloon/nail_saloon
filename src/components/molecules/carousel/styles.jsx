@@ -1,9 +1,37 @@
 import styled from 'styled-components';
+import { COLORS } from '../../../constants/colors';
+import { FONTSIZES } from '../../../constants/fonts';
 
 export const SlideShow = styled.div`
   margin: 0rem auto;
-  /* max-width: 99vh; */
   overflow: hidden;
+  position: relative;
+
+  .slide-text {
+    position: absolute;
+    z-index: 4;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 35rem;
+
+    p {
+      font-size: ${FONTSIZES['logo-large']};
+      font-weight: 700;
+      color: ${COLORS.xiketic};
+    }
+
+    button {
+      padding: 1.6rem;
+      border-radius: 0.8rem;
+      border: none;
+      outline: none;
+      background-color: ${COLORS.xiketic};
+      color: ${COLORS.white};
+      font-size: ${FONTSIZES.lg};
+      font-weight: 500;
+    }
+  }
 `;
 
 export const SlideShowSlider = styled.div`
