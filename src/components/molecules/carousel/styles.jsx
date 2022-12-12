@@ -1,10 +1,27 @@
 import styled from 'styled-components';
 import { COLORS } from '../../../constants/colors';
-import { FONTWEIGHTS } from '../../../constants/fonts';
+import { FONTSIZES } from '../../../constants/fonts';
 
 export const SlideShow = styled.div`
   margin: 0rem auto;
   overflow: hidden;
+  position: relative;
+
+  .slide-text {
+    position: absolute;
+    z-index: 4;
+    left: 15rem;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 35rem;
+
+    p {
+      font-size: ${FONTSIZES['logo-large']};
+      font-weight: 700;
+      color: ${COLORS.xiketic};
+    }
+
+  }
 `;
 
 export const SlideShowSlider = styled.div`
@@ -26,17 +43,7 @@ export const Slider = styled.div`
     height: 100%;
   }
 `;
-export const SliderContent = styled.div`
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-left: 15rem;
-`
-export const SlideHeader = styled.h1`
-  font-size: 6rem;
-  font-weight: ${FONTWEIGHTS.bold};
-  color: ${COLORS.xiketic};
-`
+
 
 export const SlideDots = styled.div`
   text-align: center;
