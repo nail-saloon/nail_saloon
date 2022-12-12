@@ -12,6 +12,7 @@ export const Btn = styled.button`
   font-weight: ${FONTWEIGHTS.bold};
   background: ${( bg ) => ( bg ? 'none': '' )};
   margin-top: 4rem;
+  cursor: pointer;
 
   ${({bg}) => 
   bg &&
@@ -25,11 +26,13 @@ export const Btn = styled.button`
 
 
 
-const Button = ({bg, children}) => {
+const Button = ({bg, children, to}) => {
 
   return (
     <Btn 
-    bg={bg}>
+    bg={bg} 
+    to = {to}
+    >
      {children}
     </Btn>
   );

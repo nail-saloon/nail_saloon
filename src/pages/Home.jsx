@@ -6,9 +6,8 @@ import Carousel from '../components/molecules/carousel';
 const Home = () => {
   return (
     <Structure>
-      Home
-      <PostHero/>
       <Carousel />
+      <PostHero/>
     </Structure>
   );
 };
