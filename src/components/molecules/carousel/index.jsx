@@ -26,8 +26,8 @@ const Carousel = () => {
         <div className="slide-text">
           <p>Lorem Ipsum <br /> Dolor Sit Amet.</p>
           <Btn bg 
-        children = "Book Appointment"
-        />
+            children = "Book Appointment"
+          />
         </div>
         <SlideShowSlider index={index}>
           {dataItem?.map(({ img }, idx) => (

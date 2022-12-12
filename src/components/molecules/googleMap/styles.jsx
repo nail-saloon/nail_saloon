@@ -4,13 +4,14 @@ import { FONTSIZES } from '../../../constants/fonts';
 
 export const Wrapper = styled.div`
   width: 100%;
-  height: 65vh;
+  // height: 65vh;
   padding: 0 10rem;
 `;
 
 export const MapFooter = styled.div`
   display: flex;
   justify-content: space-between;
+  height: 100%;
 
   div {
     max-width: 30rem;
