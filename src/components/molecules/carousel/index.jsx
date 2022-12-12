@@ -23,6 +23,10 @@ const Carousel = () => {
   return (
     <>
       <SlideShow>
+        <div className="slide-text">
+          <p> Lorem ipsum dolor sit amet.</p>
+          <button>Book an Appointment</button>
+        </div>
         <SlideShowSlider index={index}>
           {dataItem?.map(({ img }, idx) => (
             <Slider key={idx}>
