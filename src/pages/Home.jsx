@@ -1,6 +1,7 @@
 import React from 'react';
 import Structure from '../components/layouts/Structure';
 import Carousel from '../components/molecules/carousel';
+import FocusComponent from '../components/molecules/focusComp';
 import Map from '../components/molecules/googleMap';
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
     <Structure>
       <Carousel />
       <Map location={location} zoomLevel={11} />
+      <FocusComponent />
     </Structure>
   );
 };
