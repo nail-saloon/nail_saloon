@@ -1,7 +1,7 @@
 import styled, {css} from "styled-components";
 
 export const FrameImg = styled.div`
-    width: 46rem;
+    width: ${(small) => (small) ? '43rem' : ''};
     height: 45rem;
     position: relative;
     border-radius: ${(props) => (props) ? '2rem' : ''};
@@ -42,6 +42,25 @@ export const FrameImg = styled.div`
 
    `
 };
+${({small}) =>
+   small && 
+   css`
+   width: 22rem;
+   height: 22rem;
+   border-radius: .6rem;
+
+   &::before{
+    top: 1.5rem;
+    right: 3.2rem;
+   }
+
+   &::after{
+    top: -1.2rem;
+    right: 1.3rem;
+   }
+   `
+};
+
 
 
 
