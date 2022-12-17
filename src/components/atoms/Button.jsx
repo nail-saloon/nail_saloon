@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { COLORS } from '../../constants/colors';
 import { FONTSIZES, FONTWEIGHTS } from '../../constants/fonts';
-// import { BUTTON_TYPES } from '../../utilities/button';
+
 
 export const Btn = styled.button`
   padding: 1.6rem 3.2rem;
@@ -26,14 +26,14 @@ export const Btn = styled.button`
 
 
 
-const Button = ({bg, children, to}) => {
+const Button = ({bg, text, to}) => {
 
   return (
     <Btn 
-    bg={bg} 
-    to = {to}
+      bg={bg} 
+      to = {to}
     >
-     {children}
+     {text}
     </Btn>
   );
 }

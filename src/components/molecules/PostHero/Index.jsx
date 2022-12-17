@@ -13,7 +13,7 @@ const PostHero = () => {
         <Frame/>
         <div>
           <Button 
-           children={'Find Salon'}
+           text={'Find Salon'}
            
           />
           <LoremTxt>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -46,7 +46,7 @@ const PostHero = () => {
               consectetur adipiscing elit. Nunc vulputate libero et velit interdum, 
               ac aliquet
              </LoremTxt>
-             <Button children = {'Read More >>'}/>
+             <Button text = {'Read More >>'}/>
         </div>
         <Frame1/>
         </FlexWrapper>

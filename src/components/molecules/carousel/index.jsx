@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import img1 from '../../../icons/imgs/img1.png';
 import img2 from '../../../icons/imgs/img2.png';
 import img3 from '../../../icons/imgs/img3.png';
-import { Btn } from '../../atoms/Button';
-import { SlideDots, Slider, SlideShow, SlideShowSlider } from './styles';
+import Button from '../../atoms/Button';
+import { Slider, SlideShow, SlideShowSlider, SlideDots } from './styles';
 
 const Carousel = () => {
   const [index, setIndex] = useState(0);
@@ -25,8 +25,9 @@ const Carousel = () => {
       <SlideShow>
         <div className="slide-text">
           <p>Lorem Ipsum <br /> Dolor Sit Amet.</p>
-          <Btn bg 
-            children = "Book Appointment"
+          <Button bg 
+            text = {'Book Appointment'}
+            to = ''
           />
         </div>
         <SlideShowSlider index={index}>
@@ -38,7 +39,6 @@ const Carousel = () => {
         </SlideShowSlider>
       </SlideShow>
       
-
       <SlideDots>
         {dataItem?.map((_, idx) => (
           <div
@@ -47,6 +47,7 @@ const Carousel = () => {
           ></div>
         ))}
       </SlideDots>
+     
     </>
   );
 };

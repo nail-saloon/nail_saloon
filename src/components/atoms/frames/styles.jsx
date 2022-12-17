@@ -7,6 +7,7 @@ export const FrameImg = styled.div`
     border-radius: ${(props) => (props) ? '2rem' : ''};
     z-index: 1;
     margin-left: 5.3rem;
+   
     
     &::before{
       content: "";
@@ -61,9 +62,6 @@ ${({small}) =>
    `
 };
 
-
-
-
 `
 
 export const SlideShow = styled.div`
@@ -83,28 +81,14 @@ export const Slider = styled.div`
   width: 100%;
   border-radius: 40px;
   text-align: center;
+  
 
   .carousel-img {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    
   }
 `;
 
-export const SlideDots = styled.div`
-  text-align: center;
-  display: none;
-  .slideshowDot {
-    display: inline-block;
-    height: 0.5rem;
-    width: 0.5rem;
-    border-radius: 50%;
-    cursor: pointer;
-    margin: 15px 7px 0px;
-    background-color: #c4c4c4;
-  }
 
-  .slideshowDot.active {
-    background-color: #6a0dad;
-  }
-`;

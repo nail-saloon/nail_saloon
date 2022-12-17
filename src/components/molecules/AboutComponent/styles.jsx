@@ -20,14 +20,14 @@ export const Wrapper = styled.div`
 
 `;
 export const Header = styled.h1`
-  font-size: ${FONTSIZES.xxxlarge};
+  font-size: ${FONTSIZES.xxlarge};
   font-weight: ${FONTWEIGHTS.xbold};
 `
 export const HomeLink = styled(Link)`
  display: flex;
  justify-content: end;
  color: ${COLORS.xiketic};
- font-size: ${FONTSIZES.xlarge};
- font-weight: ${FONTWEIGHTS.xbold};
+ font-size: ${FONTSIZES.base};
+ font-weight: ${FONTWEIGHTS.bold};
 
 `

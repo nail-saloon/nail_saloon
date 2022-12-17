@@ -44,10 +44,8 @@ export const Slider = styled.div`
   }
 `;
 
-
 export const SlideDots = styled.div`
   text-align: center;
-
   .slideshowDot {
     display: inline-block;
     height: 0.5rem;
@@ -57,7 +55,6 @@ export const SlideDots = styled.div`
     margin: 15px 7px 0px;
     background-color: #c4c4c4;
   }
-
   .slideshowDot.active {
     background-color: #6a0dad;
   }
