@@ -1,30 +1,29 @@
-import React from 'react';
-import { DPIconLogo } from '../../../icons';
-import { Nav, NavLink, NavMenu } from './Style';
+import React from 'react'
+import { DPIconLogo } from '../../../icons'
+import {
+Nav, NavLink, NavMenu
+} from './Style';
+import {LinkData} from '../../../utilities/Links';
+
+
 
 const Navbar = () => {
   return (
-    <Nav>
-      <div className="logo">
-        <NavLink to="./home">
-          <DPIconLogo />
-        </NavLink>
-      </div>
-      <NavMenu>
-        <NavLink to="/">Home</NavLink>
+   
+      <Nav>
+        <div className="logo">
+          <NavLink to= './home'> <DPIconLogo/> </NavLink>
+        </div>
+        <NavMenu>
+          
+           
+        {LinkData.map((linkGroup) => linkGroup.Navbar?.map((link, index) => ( <NavLink key={index} to= {link.to} >{link.name}</NavLink>)))} 
+         
+        </NavMenu>
+      </Nav>
+  
+  )
+}
 
-        <NavLink to="/About">About</NavLink>
-
-        <NavLink to="/Gallery">Gallery</NavLink>
-
-        <NavLink to="/Services">Services</NavLink>
-
-        <NavLink to="/Blog">Blog</NavLink>
-
-        <NavLink to="/Contact">Contact Us</NavLink>
-      </NavMenu>
-    </Nav>
-  );
-};
 
 export default Navbar;

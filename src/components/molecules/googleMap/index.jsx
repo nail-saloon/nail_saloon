@@ -1,5 +1,6 @@
 import GoogleMapReact from 'google-map-react';
 import React from 'react';
+import Button from '../../atoms/Button';
 import LocationPin from '../LocationPin';
 import { FooterHeader, FooterText, MapFooter, Wrapper } from './styles';
 
@@ -20,7 +21,9 @@ const Map = ({ location, zoomLevel }) => {
             No 1, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             vulputate
           </FooterText>
-          <button>Get Direction</button>
+          <Button bg 
+            text =  "Get Directions"
+        />
         </div>
         <div>
           <FooterHeader>Business Hour</FooterHeader>
@@ -32,7 +35,9 @@ const Map = ({ location, zoomLevel }) => {
         <div>
           <FooterHeader>Contact Us</FooterHeader>
           <FooterText>+234587954458</FooterText>
-          <button>Call Us</button>
+          <Button bg 
+             text = "Call Us"
+        />
         </div>
       </MapFooter>
     </Wrapper>

@@ -6,7 +6,7 @@ import {
   FooterStyle, FooterRow, Bold, FooterColumn, SocialIcons, FooterInput, SignupBtn, LinkWrapper, Links, FooterLink
 } from './FooterStyle';
 
-import {Footerlinks} from '../../../utilities/Footerlinks';
+import {LinkData} from '../../../utilities/Links';
 
 
 
@@ -39,15 +39,15 @@ const Footer = () => {
       
       <LinkWrapper>
         <Links>
-        {Footerlinks.map((linkGroup) => linkGroup.menu?.map((link, index) => (<FooterLink key={index} to={link.to}>{link.name}</FooterLink>)))} 
+        {LinkData.map((linkGroup) => linkGroup.menu?.map((link, index) => (<FooterLink key={index} to={link.to}>{link.name}</FooterLink>)))} 
         </Links>
         
         <Links>
-        {Footerlinks.map((linkGroup) => linkGroup.about?.map((link, index) => (<FooterLink key={index} to={link.to}>{link.name}</FooterLink>)))} 
+        {LinkData.map((linkGroup) => linkGroup.about?.map((link, index) => (<FooterLink key={index} to={link.to}>{link.name}</FooterLink>)))} 
         </Links>
 
         <Links>
-        {Footerlinks.map((linkGroup) => linkGroup.instructions?.map((link, index) => (<FooterLink key={index} to={link.to}>{link.name}</FooterLink>)))} 
+        {LinkData.map((linkGroup) => linkGroup.instructions?.map((link, index) => (<FooterLink key={index} to={link.to}>{link.name}</FooterLink>)))} 
         </Links>
       </LinkWrapper>
       

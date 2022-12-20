@@ -1,6 +1,5 @@
-export const Footerlinks = [
+export const LinkData = [
         {
-            id: 1,
             menu: [
                 {
                     
@@ -10,12 +9,12 @@ export const Footerlinks = [
                 {
                     
                     name: 'Services',
-                    to: '*'
+                    to: './Services'
                 },
                 {
                     
                     name: 'Gallery',
-                    to: '*'
+                    to: './Gallery'
                 },
                 {
                     
@@ -30,15 +29,14 @@ export const Footerlinks = [
             ]
         },
         {
-            id: 2,
             about: [
                 {
                     name: 'About',
-                    to: '*'
+                    to: './About'
                 },
                 {
                     name: 'Blog',
-                    to: '*'
+                    to: './Blog'
                 },
                 {
                     name: 'Our Story',
@@ -48,7 +46,6 @@ export const Footerlinks = [
             ]
         },
         {
-            id: 3,
             instructions: [
                 {
                     name: 'Instructions',
@@ -68,7 +65,38 @@ export const Footerlinks = [
                 },
                
             ]
-        }
+        },
+        {
+        Navbar: [
+            {
+                name: 'Home',
+                to: './'
+            },
+            {
+                name: 'About',
+                to: './About'
+            },
+            {
+                name: 'Gallery',
+                to: './Gallery'
+
+            },
+            {
+                name: 'Services',
+                to: './Services'
+            },
+            {
+                name: 'Blog',
+                to: './Blog'
+            },
+            {
+                name: 'Contact',
+                to: './Contact'
+            },
+           
+        ]
+    
+    }
       
        
       ];

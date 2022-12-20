@@ -10,3 +10,5 @@ export { ReactComponent as DPIconResult } from './svg/result.svg';
 export { ReactComponent as DPIconSalesIcon } from './svg/sales.svg';
 export { ReactComponent as DPIconSupport } from './svg/support.svg';
 export { ReactComponent as DPIconTwitter } from './svg/Twitter.svg';
+export { ReactComponent as DPIconDirection } from './svg/Direction.svg';
+export { ReactComponent as DPIconStar } from './svg/Star.svg';

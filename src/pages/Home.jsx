@@ -1,8 +1,10 @@
-import React from 'react';
+import React from 'react'
 import Structure from '../components/layouts/Structure';
+import PostHero from '../components/molecules/PostHero/Index';
 import Carousel from '../components/molecules/carousel';
 import FocusComponent from '../components/molecules/focusComp';
 import Map from '../components/molecules/googleMap';
+import Reviews from '../components/molecules/Reviews';
 
 const Home = () => {
   const location = {
@@ -14,8 +16,11 @@ const Home = () => {
   return (
     <Structure>
       <Carousel />
+      <PostHero/>
       <Map location={location} zoomLevel={11} />
+      <Reviews/>
       <FocusComponent />
+
     </Structure>
   );
 };

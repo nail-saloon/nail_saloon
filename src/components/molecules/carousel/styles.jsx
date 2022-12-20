@@ -10,7 +10,7 @@ export const SlideShow = styled.div`
   .slide-text {
     position: absolute;
     z-index: 4;
-    left: 2rem;
+    left: 15rem;
     top: 50%;
     transform: translateY(-50%);
     max-width: 35rem;
@@ -21,16 +21,6 @@ export const SlideShow = styled.div`
       color: ${COLORS.xiketic};
     }
 
-    button {
-      padding: 1.6rem;
-      border-radius: 0.8rem;
-      border: none;
-      outline: none;
-      background-color: ${COLORS.xiketic};
-      color: ${COLORS.white};
-      font-size: ${FONTSIZES.lg};
-      font-weight: 500;
-    }
   }
 `;
 
@@ -41,7 +31,7 @@ export const SlideShowSlider = styled.div`
 `;
 
 export const Slider = styled.div`
-  height: 400px;
+  height: calc(100vh - 7rem);
   display: inline-block;
   width: 100%;
   border-radius: 40px;
@@ -56,7 +46,6 @@ export const Slider = styled.div`
 
 export const SlideDots = styled.div`
   text-align: center;
-
   .slideshowDot {
     display: inline-block;
     height: 0.5rem;
@@ -66,7 +55,6 @@ export const SlideDots = styled.div`
     margin: 15px 7px 0px;
     background-color: #c4c4c4;
   }
-
   .slideshowDot.active {
     background-color: #6a0dad;
   }
