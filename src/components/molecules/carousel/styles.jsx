@@ -10,7 +10,7 @@ export const SlideShow = styled.div`
   .slide-text {
     position: absolute;
     z-index: 4;
-    left: 15rem;
+    left: 10rem;
     top: 50%;
     transform: translateY(-50%);
     max-width: 35rem;
@@ -20,7 +20,6 @@ export const SlideShow = styled.div`
       font-weight: 700;
       color: ${COLORS.xiketic};
     }
-
   }
 `;
 
