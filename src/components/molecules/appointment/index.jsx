@@ -11,12 +11,12 @@ import {
   Wrapper,
 } from './styles';
 
-const BookAppointment = () => {
+const BookAppointment = ({ onClose }) => {
   return (
     <Wrapper>
       <Header>
         Book Appointment
-        <DPIconCancelBtn className="btn-cancel" />
+        <DPIconCancelBtn className="btn-cancel" onClick={onClose} />
       </Header>
       <InputContainer>
         <Label>Full Name</Label>

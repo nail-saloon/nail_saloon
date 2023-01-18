@@ -1,7 +1,6 @@
 import React from 'react';
 import { DPIconStar } from '../../../icons';
 import { reviews } from '../../../utilities/Reviews';
-import { Btn } from '../../atoms/Button';
 import { Wrapper, Header, ReviewContainer, ReviewBtn } from './styles';
 
 const Reviews = () => {
@@ -32,12 +31,6 @@ const Reviews = () => {
          })}
         
         </ReviewContainer>
-        <ReviewBtn>
-            <Btn 
-            bg
-            children = "Add a review"
-            />
-        </ReviewBtn>
     </Wrapper>
   )
 }
