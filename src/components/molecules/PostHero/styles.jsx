@@ -3,7 +3,7 @@ import { FONTSIZES } from '../../../constants/fonts';
 
 
 export const Container = styled.div`
-    padding: 12rem;
+    padding: 0 12rem;
 `
 export const FlexWrapper = styled.div`
     display: flex;
@@ -11,7 +11,7 @@ export const FlexWrapper = styled.div`
     justify-content: center;
     gap: 10rem;
     height: 100vh;
-    margin-bottom: 20rem;
+    margin-bottom: 10rem;
 `
 export const LoremTxt = styled.p`
    font-size: ${FONTSIZES.base};
