@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { COLORS } from '../../../constants/colors';
-// import { DPIconCancelBtn } from '../../../icons';
 
 const Modal = ({ children, show, hide }) => {
   if (!show) {
