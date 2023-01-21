@@ -40,7 +40,7 @@ const Carousel = () => {
           ))}
         </SlideShowSlider>
       </SlideShow>
-      <Modal show={show}>
+      <Modal show={show} hide={() => setShow(false)}>
         <BookAppointment onClose={() => setShow(false)} />
       </Modal>
       <SlideDots>

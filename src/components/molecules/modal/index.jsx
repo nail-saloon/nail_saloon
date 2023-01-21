@@ -25,6 +25,7 @@ const ModalWrapper = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
+  z-index: 10;
 
   .cancel-btn {
     position: absolute;
