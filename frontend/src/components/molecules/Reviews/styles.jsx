@@ -32,7 +32,4 @@ export const ReviewContainer = styled.div`
     object-fit: cover;
   }
 `;
-export const ReviewBtn = styled.div`
-  display: flex;
-  justify-content: center;
-`;
+

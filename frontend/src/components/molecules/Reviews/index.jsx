@@ -1,7 +1,7 @@
 import React from 'react';
 import { DPIconStar } from '../../../icons';
 import { reviews } from '../../../utilities/Reviews';
-import { Wrapper, Header, ReviewContainer, ReviewBtn } from './styles';
+import { Wrapper, Header, ReviewContainer } from './styles';
 
 const Reviews = () => {
      const StarArray = [...Array(5)]
