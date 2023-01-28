@@ -8,7 +8,9 @@ const Modal = ({ children, show, hide }) => {
   }
   return (
     <ModalWrapper onClick={hide}>
-      <ModalContent>{children}</ModalContent>
+      <ModalContent onClick={(e) => e.stopPropagation()}>
+        {children}
+      </ModalContent>
     </ModalWrapper>
   );
 };

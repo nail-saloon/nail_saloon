@@ -28,7 +28,7 @@ const Carousel = () => {
       <SlideShow>
         <div className="slide-text">
           <p>
-            Lorem Ipsum <br /> Dolor Sit Amet.
+            Chikodi's <br /> Nail Saloon.
           </p>
           <Button bg text={'Book Appointment'} onClick={() => setShow(true)} />
         </div>
