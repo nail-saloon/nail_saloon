@@ -9,7 +9,11 @@ export const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 5;
   padding: 0 10rem;
+  background-color: ${COLORS.Verve};
 `;
 
 export const NavLink = styled(Link)`

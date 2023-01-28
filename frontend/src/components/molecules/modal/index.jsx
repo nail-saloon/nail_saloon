@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { COLORS } from '../../../constants/colors';
-// import { DPIconCancelBtn } from '../../../icons';
 
 const Modal = ({ children, show, hide }) => {
   if (!show) {
@@ -26,6 +25,7 @@ const ModalWrapper = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
+  z-index: 10;
 
   .cancel-btn {
     position: absolute;
