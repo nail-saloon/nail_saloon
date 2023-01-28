@@ -3,7 +3,7 @@ import { FONTSIZES, FONTWEIGHTS } from '../../../constants/fonts';
 
 export const Wrapper = styled.div`
   text-align: center;
-  margin: 25.5rem 0;
+  margin: 10rem 0;
 `;
 
 export const CellWrapper = styled.div`
