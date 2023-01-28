@@ -1,8 +1,7 @@
 import React from 'react';
 import { DPIconStar } from '../../../icons';
 import { reviews } from '../../../utilities/Reviews';
-import { Btn } from '../../atoms/Button';
-import { Wrapper, Header, ReviewContainer, ReviewBtn } from './styles';
+import { Wrapper, Header, ReviewContainer } from './styles';
 
 const Reviews = () => {
      const StarArray = [...Array(5)]
@@ -32,12 +31,6 @@ const Reviews = () => {
          })}
         
         </ReviewContainer>
-        <ReviewBtn>
-            <Btn 
-            bg
-            children = "Add a review"
-            />
-        </ReviewBtn>
     </Wrapper>
   )
 }

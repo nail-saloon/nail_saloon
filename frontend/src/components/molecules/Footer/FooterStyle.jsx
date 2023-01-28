@@ -5,7 +5,7 @@ import { FONTSIZES, FONTWEIGHTS } from '../../../constants/fonts';
 
 export const FooterStyle = styled.footer`
   background: ${COLORS.xiketic};
-  height: 100vh;
+  // height: 100vh;
 `;
 export const FooterRow = styled.div`
   display: flex;
